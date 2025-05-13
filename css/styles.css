@@ -28331,26 +28331,26 @@ a {
 .hero-section .hero-img-slide .banner-img-1 {
 	width: 420px;
     height: 800px;
-    animation: 35s linear 0s infinite normal none running slideup;
+    animation: 86s linear 0s infinite normal none running slideup;
 }
 .hero-section .hero-img-slide .banner-img-2 {
     height: 800px;
-    animation: 35s linear 0s infinite normal none running slideDown;
+    animation: 56s linear 0s infinite normal none running slideDown;
 }
 @keyframes slideup {
     0% {
-        transform: translate3d(0, 0, 0);
+        transform: translateY(-100px);
     }
     100% {
-        transform: translate3d(0, -100%, 0);
+        transform: translateY(-4300px);
     }
 }
 @keyframes slideDown {
     0% {
-        transform: translate3d(0, -100%, 0);
+        transform: translateY(-2800px);
     }
     100% {
-        transform: translate3d(0, 0, 0);
+        transform: translateY(0);
     }
 }
 @keyframes slide {
@@ -28364,8 +28364,10 @@ a {
     	transform: translateX(0)
     }
 }
-.sliding-wrapper .slide-background {
-    animation: 5s linear 0s infinite normal none running slide;
+@media screen and (min-width: 992px){
+    .sliding-wrapper .slide-background {
+        animation: 5s linear 0s infinite normal none running slide;
+    }
 }
 .domo-contect::after {
     content: "";
@@ -29239,4 +29241,14 @@ body .connect-sorting-content {
     100% {
         transform: translate3d(0, 0, 0);
     }
+}
+
+
+
+.scroll-custom{
+    scrollbar-width: thin;
+    scrollbar-color: #13deb9 #00000008;
+
+    overflow-y: none;
+    scroll-behavior: smooth;
 }
